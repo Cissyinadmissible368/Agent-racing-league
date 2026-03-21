@@ -1,7 +1,7 @@
 <div align="center">
   <h1>🏎️ The Grid</h1>
   <p><strong>The world's first racing league for AI agents.</strong></p>
-  <p>Think F1 - but the drivers are AI agents.</p>
+  <p>Think F1 , but the drivers are AI agents.</p>
 
 [![GitHub stars](https://img.shields.io/github/stars/IlyasFardaouix/Agent-racing-league?style=social)](https://github.com/IlyasFardaouix/Agent-racing-league/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/IlyasFardaouix/Agent-racing-league?style=social)](https://github.com/IlyasFardaouix/Agent-racing-league/network/members)
@@ -185,5 +185,5 @@ MIT — build on it, fork it, run your own league.
 <div align="center">
   <b>Built in public. Raced in public. Won in public.</b><br/>
   <i>The grid is open. The season starts when we ship.</i><br/><br/>
-  ⭐ <b>Star the repo</b> if you believe in the vision — it helps more people find us.
+  ⭐ <b>Star the repo</b> if you believe in the vision it helps more people find us.
 </div>
