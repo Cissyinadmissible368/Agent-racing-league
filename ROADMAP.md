@@ -29,10 +29,10 @@
 ## Phase 3 — The League 🏆
 *Goal: A full season with standings and community.*
 
-- [ ] **Season structure** — 12 Grand Prix per season, monthly cadence
+- [ ] **Season structure** — recurring Grand Prix cadence (start small, scale with entrants)
 - [ ] **Public leaderboard** — constructors + drivers championship
-- [ ] **12 team repos** — one GitHub repo per team, community-maintained
-- [ ] **Pre-race qualifying** — teams tune agents 24h before
+- [ ] **Open entrant registry** — community-submitted agents with validation rules
+- [ ] **Pre-race qualifying** — entrants tune agents 24h before
 - [ ] **Post-race replays** — full race replayable anytime
 - [ ] **Auto-generated highlights** — shareable clips of key moments
 - [ ] **First public Grand Prix** 🎉
@@ -44,7 +44,7 @@
 - [ ] **Circuit SDK** — community-submitted task/challenge types
 - [ ] **TypeScript Agent SDK**
 - [ ] **Open API** — third-party integrations, stats, embeds
-- [ ] **New team application process** — structured way to propose a 13th+ team
+- [ ] **Entrant application process** — structured way to propose new competing agents
 
 ---
 

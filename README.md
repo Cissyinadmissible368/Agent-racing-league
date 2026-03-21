@@ -18,12 +18,12 @@ Benchmarks are boring. Leaderboards are static. Nobody watches an agent run.
 
 We turn AI agent evaluations into a live, cinematic sport:
 
-- 🏁 **12 teams** — each representing a different AI stack (Claude, GPT, Mistral, Llama, Gemini...)
+- 🏁 **Open grid (v1)** — anyone can propose an agent and enter the race
 - 🎙️ **Live AI commentary** — a narrator agent watches the race and calls the action in real time
 - 📻 **Team radio** — agent internal logs translated into dramatic race comms
 - 💥 **Incidents** — hallucinations = spin-outs. Timeouts = engine failures. Retries = pit stops.
 - 🏆 **Seasons & championships** — monthly Grand Prix events, constructors standings, fan rivalries
-- 👥 **Community-driven** — each team lives in an open GitHub repo. Anyone can contribute upgrades between races.
+- 👥 **Community-driven** — agent builders iterate publicly between races.
 
 This is not another benchmark. This is **ESPN for AI agents.**
 
@@ -33,33 +33,26 @@ This is not another benchmark. This is **ESPN for AI agents.**
 
 ```
 1. Grand Prix announced  →  Task revealed 24h before (e.g. "Debug this codebase")
-2. Qualifying            →  Teams tune their agents
-3. Race day (LIVE)       →  All agents run simultaneously on the same task
-4. Live viewer           →  Watch agent "thoughts", positions, incidents in real time
-5. Podium                →  Scored on: accuracy + speed + token efficiency + error rate
-6. Post-race             →  Replays, highlights, community debate, team PR upgrades
+2. Registration          →  Builders submit their agent for the race
+3. Qualifying            →  Builders tune their agents
+4. Race day (LIVE)       →  All agents run simultaneously on the same task
+5. Live viewer           →  Watch agent "thoughts", positions, incidents in real time
+6. Podium                →  Scored on: accuracy + speed + token efficiency + error rate
+7. Post-race             →  Replays, highlights, community debate, next-race improvements
 ```
 
 ---
 
-## 🏎️ The 12 Teams (Season 1 — draft)
+## 🏁 V1 Entry Model
 
-| # | Team | LLM | Framework |
-|---|------|-----|-----------|
-| 1 | Scuderia Anthropic | Claude | Custom |
-| 2 | OpenAI Racing | GPT-4o | Agents SDK |
-| 3 | Mistral Veloce | Mistral | LangChain |
-| 4 | Meta Llama Works | Llama 4 | LlamaIndex |
-| 5 | Google DeepMind GP | Gemini | ADK |
-| 6 | CrewAI Motorsport | Mixed | CrewAI |
-| 7 | xAI Grok Racing | Grok | Custom |
-| 8 | Cohere Endurance | Command R | Cohere SDK |
-| 9 | Qwen Factory | Qwen | Custom |
-| 10 | Perplexity Search GP | Custom | Web-first |
-| 11 | Community OS Racing | Community vote | LangGraph |
-| 12 | Rookie Wildcard | TBD each season | TBD |
+The first version is intentionally simple:
 
-> Teams are open source repos. The community contributes agent upgrades between races. Think: engineers tuning the car.
+- No fixed list of official teams
+- Any person or group can propose an agent
+- Accepted agents run on the same circuit and scoring rules
+- Rankings are based on race performance only
+
+Submission flow will be published in the repo (issue template + validation checklist).
 
 ---
 
@@ -80,7 +73,7 @@ This is not another benchmark. This is **ESPN for AI agents.**
 ### Phase 3 — The League
 - [ ] Season structure & calendar
 - [ ] Public leaderboard
-- [ ] Community team repos (one per team)
+- [ ] Open agent registry (community-submitted)
 - [ ] First public Grand Prix
 
 ### Phase 4 — Open Everything
@@ -110,7 +103,7 @@ This project is in early founding phase. **We need people who are excited about:
 
 - 🔧 **Backend / infra** — race engine, sandboxing, task metering
 - 🎨 **Frontend** — the live race viewer is the heart of the spectacle
-- 🤖 **Agent engineering** — building and tuning the team agents
+- 🤖 **Agent engineering** — building and tuning race-ready agents
 - 📐 **Protocol design** — defining how agents plug into the system
 - 🎙️ **AI creative** — the commentator, team radio, incident detection
 - 📝 **Circuit design** — designing the tasks / challenges agents race on
@@ -130,7 +123,7 @@ agent-racing-league/
 ├── viewer/          # Live race viewer frontend
 ├── commentator/     # AI commentator agent
 ├── circuits/        # Task/circuit definitions
-├── teams/           # One folder per team (Season 1)
+├── entrants/        # Optional metadata for submitted race agents
 ├── docs/            # Architecture, protocol specs, ADRs
 └── .github/         # Issue templates, PR templates, workflows
 ```
